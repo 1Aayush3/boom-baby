@@ -4,7 +4,6 @@ $(document).ready(function () {
     let bombChecker;
 
     $('.game-on').on('click', function () {
-        console.log($(this).css({ 'animation': 'none', 'color': 'green' }));
         $(this).fadeOut(2000);
         startCountdown();
         setTimeout(createSquares, 2000);
@@ -21,7 +20,6 @@ $(document).ready(function () {
             countdownElement.text(formattedTime);
             if (timeInSeconds <= 0) {
                 clearInterval(intervalId);
-                console.log("Countdown finished.");
                 explode = true;
             } else {
                 timeInSeconds--;
