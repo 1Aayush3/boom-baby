@@ -46,7 +46,10 @@ $(document).ready(function () {
                 if (i === correctIndex) {
                     successAttempts++;
                     $("#attempts").html(`Successful attempts: ${successAttempts}/5`);
-                    if (successAttempts === 5) $('#diffused').show();
+                    if (successAttempts === 5){
+                        clearInterval(bombChecker);
+                        $('#diffused').show();
+                    } 
                     explode = false;
                 } else {
                     explode = true;
