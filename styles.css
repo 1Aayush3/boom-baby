@@ -1,0 +1,181 @@
+body,
+html {
+    margin: 0px;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    font-family: "Sixtyfour", sans-serif;
+}
+
+.super-container {
+    display: flex;
+}
+
+.main-container {
+    height: 100vh;
+    width: 50%;
+}
+
+.bomb-container {
+    width: 50%;
+    margin: auto;
+    margin-top: 50%;
+    position: relative;
+    width: fit-content;
+}
+
+#bomb {
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.count-down {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid grey;
+    width: 5.5rem;
+    line-height: 152%;
+    z-index: 2;
+    background-color: black;
+    color: #80c904;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.gifs {
+    z-index: 3;
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+.diffuser {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    color: #fff;
+}
+
+.diffuser h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#attempts {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.square:hover {
+    background-color: #555;
+}
+
+.square:active {
+    background-color: #666;
+}
+
+#myImage {
+    z-index: 6;
+    position: absolute;
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.game-on {
+    animation: blink 1s infinite alternate;
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+}
+
+.game-on:hover {
+    animation: none;
+    cursor: pointer;
+    opacity: 1;
+    color: green;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tilt-n-move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boom Baby!!</title>
+    <link rel="icon" type="image/x-icon" href="/images/bomb.png">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+</head>
+
+<body>
+    <img id="diffused" class="gifs" src="./media/images/bomb-defused.gif" alt="bomb diffuse" />
+    <img id="explosion" class="gifs" src="./media/images/explosion.gif" alt="explosion" />
+    <img class="fade-in-image" id="myImage" src="./media/images/after-image.jpeg" alt="Image">
+    <audio id="explosionAudio" src="./media/audio/explosion_sound.ogg" preload="auto"></audio>
+
+    <div class="super-container">
+        <div class="main-container">
+            <div class="bomb-container">
+                <img id="bomb" src="./media/images/bomb.png" alt="bomb" />
+                <div class="count-down">00:00</div>
+            </div>
+        </div>
+        <div>
+            <div class="diffuser">
+                <h1>Choose the odd color</h1>
+                <h1 id="attempts">Successfull attempts: 0/5</h1>
+                <div class="container" id="container">
+                </div>
+                <h1 class="game-on">Boom Baby</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
